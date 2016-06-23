@@ -1,0 +1,70 @@
+---
+swagger: "2.0"
+info:
+  description: "Move your app forward with the Triplelift API"
+  version: "1.0.0"
+  title: "Triplelift API"
+host: "52.33.218.252:3050"
+basePath: "/api"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /aggregates:
+    get:
+      tags:
+      - "Aggregates"
+      summary: "Aggregate Types"
+      description: "The Aggregates endpoint returns the performance (number of clicks\
+        \ and impressions) of a given advertiser over the past week.\n"
+      operationId: "aggregatesGET"
+      parameters:
+      - name: "advertiser_ids"
+        in: "query"
+        description: "advertiser_ids separated by comma."
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "An array of aggregates"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Aggregate"
+        default:
+          description: "Unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
+      x-swagger-router-controller: "Aggregates"
+definitions:
+  Aggregate:
+    type: "object"
+    properties:
+      advertiser_id:
+        type: "integer"
+        format: "int32"
+        description: "Unique identifier"
+      ymd:
+        type: "string"
+        description: "Year Month Date."
+      num_clicks:
+        type: "integer"
+        format: "int32"
+        description: "Numder of Clicks."
+      num_impressions:
+        type: "integer"
+        format: "int32"
+        description: "Number of Impressions."
+  Error:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      fields:
+        type: "string"

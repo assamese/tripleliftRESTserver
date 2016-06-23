@@ -1,0 +1,17 @@
+{
+  "name": "triplelift-api",
+  "version": "1.0.0",
+  "description": "Triplelift API swagger-2.0 specification",
+  "main": "tlserver.js",
+  "keywords": [
+    "swagger"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "swagger-tools": "0.9.*",
+    "cors": "^2.6"
+  }
+}

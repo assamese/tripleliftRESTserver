@@ -1,0 +1,11 @@
+Touch_Type,Event_Time,Partner,Media_Source,Channel,Campaign_ID,advertiser_id
+click,22/Jun/2016:16:05:49 -0800 ,Redhook,googleadwords_int,Search,353452564,123
+click,22/Jun/2016:16:05:48 -0800 ,Clarion,supersonicads_int,Search,360993724,234
+click,22/Jun/2016:16:05:47 -0800 ,MyAgency,facebook,Search,373654324,456
+impression,22/Jun/2016:15:05:49 -0800 ,Redhook,googleadwords_int,Search,353452564,123
+impression,22/Jun/2016:15:05:48 -0800 ,Clarion,supersonicads_int,Search,360993724,234
+impression,22/Jun/2016:15:05:47 -0800 ,MyAgency,facebook,Search,373654324,456
+click,16/Jun/2016:16:05:49 -0800 ,Redhook,googleadwords_int,Search,353452564,123
+click,16/Jun/2016:16:05:48 -0800 ,Clarion,supersonicads_int,Search,360993724,234
+impression,16/Jun/2016:15:05:48 -0800 ,Clarion,supersonicads_int,Search,360993724,234
+impression,16/Jun/2016:15:05:47 -0800 ,MyAgency,facebook,Search,373654324,456
